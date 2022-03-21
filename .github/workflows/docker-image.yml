@@ -19,7 +19,7 @@ jobs:
         docker build . \
           --pull=true \
           --file=Dockerfile \
-          --tag="$IMAGE_NAME:latest" \
+          --tag="sftp-debian-buster:latest" \
           --label="org.opencontainers.image.source=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" \
           --label="org.opencontainers.image.revision=$GITHUB_SHA" \
           --label="org.opencontainers.image.created=$(date --rfc-3339=seconds)"
