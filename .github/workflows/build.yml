@@ -36,6 +36,6 @@ jobs:
           echo "${{ secrets.DOCKER_PASSWORD }}" | docker login \
             -u ${{ secrets.DOCKER_USER }} --password-stdin
 
-          docker push --all-tags $IMAGE_NAME
+          docker push --all-tags sftp-debian-buster:latest
           docker logout
 
