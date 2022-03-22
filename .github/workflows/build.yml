@@ -10,9 +10,6 @@ on:
       - "*.png"
   pull_request:
 
-env:
-  IMAGE_NAME: atmoz/sftp
-
 jobs:
   build:
     runs-on: ubuntu-latest
